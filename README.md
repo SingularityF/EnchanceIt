@@ -43,3 +43,9 @@ A containerized API service that will **enhance** an image for you with the help
 2. Create a new service account in IAM & Admin
    - Assign it `Storage Object Admin` role
    - Create a json key and store the key securely
+
+3. Configure
+   - Copy the service account json key to this repository
+   - Rename `config_template.yaml` to `config.yaml` and make changes to it based on your environment
+   
+4. Build and deploy the container to Cloud Run
