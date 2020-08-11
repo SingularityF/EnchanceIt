@@ -7,7 +7,7 @@ A containerized API service that will **enhance** an image for you with the help
 * Very responsive. Kubernetes automatically launch new containers so that one user will not steal resources from another user.
 
 ## Challenges
-* Up until this moment, no cloud computing service offers containerized serverless solutions with the support of GPU or TPU. And there is a very low limit set on how much CPU resource can be consumed by each container. Therefore, you can expect processing to be fairly slow for very large images.
+* Up until this moment (Aug 2020), no cloud computing service offers containerized serverless solutions with the support of GPU or TPU. And there is a very low limit set on how much CPU resource can be consumed by each container. Therefore, you can expect processing to be fairly slow for very large images.
 
 ## Prerequisites
 * A Google Cloud Platform account
