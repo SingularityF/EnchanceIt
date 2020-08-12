@@ -3,3 +3,5 @@ Flask
 gunicorn
 google-cloud-storage
 pyyaml
+chainer
+pillow

@@ -18,4 +18,4 @@ ENV GOOGLE_APPLICATION_CREDENTIALS="/usr/local/EnhanceIt/service_account.json"
 RUN pip3 install -r requirements.txt
 
 WORKDIR /usr/local/EnhanceIt/src
-CMD exec gunicorn --bind :$PORT --workers 2 --threads 8 --timeout 0 app:app
+CMD exec gunicorn --bind :$PORT --workers 2 --timeout 0 app:app
