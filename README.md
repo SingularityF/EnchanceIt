@@ -35,7 +35,7 @@ A containerized API service that will **enhance** an image for you with the help
    - Assign `Storage Object Viewer` role to `allUsers` so that users can download enhanced images
    
 2. Create a new service account in IAM & Admin
-   - Assign it `Storage Object Admin` role
+   - Assign it `Storage Admin` role
    - Create a json key and store the key securely
 
 3. Configure

@@ -13,4 +13,9 @@ RUN echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.
 RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyring /usr/share/keyrings/cloud.google.gpg add - 
 RUN apt-get update && apt-get -y install google-cloud-sdk
 RUN gcloud auth activate-service-account --key-file service_account.json
+ENV GOOGLE_APPLICATION_CREDENTIALS="/usr/local/EnhanceIt/service_account.json"
+
 RUN pip3 install -r requirements.txt
+
+WORKDIR /usr/local/EnhanceIt/src
+CMD exec gunicorn --bind :$PORT --workers 2 --threads 8 --timeout 0 app:app

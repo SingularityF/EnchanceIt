@@ -1,3 +1,7 @@
 service_account.json
 config.yaml
 src/downloads/
+src/*.pyc
+src/*.pyo
+src/*.pyd
+src/__pycache__/
