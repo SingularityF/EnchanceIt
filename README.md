@@ -27,6 +27,11 @@ A containerized API service that will **enhance** an image for you with the help
 
 7. The url of the stored image is returned to the user
 
+## Super-resolution algorithms
+
+* [waifu2x-chainer](https://github.com/tsurumeso/waifu2x-chainer)
+
+
 ## Setup
 
 1. Create a new Cloud Storage bucket, this will behave like a tmp folder for the API
@@ -43,3 +48,5 @@ A containerized API service that will **enhance** an image for you with the help
    - Rename `config_template.yaml` to `config.yaml` and make changes to it based on your environment
    
 4. Build and deploy the container to Cloud Run
+   - Use maximum CPU, RAM and timeout setting
+   - Set maximum requests per container to 1
