@@ -1,7 +1,7 @@
 # EnhanceIt
 A containerized API service that will **enhance** an image for you with the help of image super-resolution(SR). 
 
-**🚧 Unfortunately, this project has become a failed attempt due to memory limits on serverless solutions and the memory intensive nature of neural networks 🚧**
+**🚧 Unfortunately, this project has become a failed attempt due to memory limits on serverless solutions and the memory intensive nature of neural networks. However, you can still run the containerized application in a server with more than 4GB of memory at the cost of losing all the benefits of serverless technology. 🚧**
 
 ## Highlights
 * Highly cost-effective. Image super-resolution is a very time-intensive and resource-intensive task. The API can run on Kubernetes so that running a powerful yet expensive server is not required. Furthermore, the API taps into serverless technologies so that zero cost will be incurred when idling.
